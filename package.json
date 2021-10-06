@@ -1,0 +1,19 @@
+{
+  "name": "js-bulb",
+  "version": "1.0.0",
+  "description": "Demo project to demonstrate how to send an S.O.S. message using Cypress.",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "keywords": [
+    "Cypress.io",
+    "Talking About Testing",
+    "cy.handsOn()"
+  ],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^8.5.0"
+  }
+}
