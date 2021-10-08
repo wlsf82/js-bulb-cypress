@@ -1,9 +1,5 @@
 Cypress.Commands.add('sos', () => {
-  // "Setup"
-  cy.visit('/js/js_intro.asp', { log: false })
-  cy.get('#accept-choices', { log: false })
-    .click({ log: false })
-
+  cy.visit('../index.html', { log: false })
   // Fast
   cy.toggleBulbOnOff(3, 300)
   // Slow
