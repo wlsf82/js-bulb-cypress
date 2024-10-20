@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Light Switch</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      color: #555;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    img {
+      width: 150px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <h2>What Can JavaScript Do?</h2>
-    <p>JavaScript can change HTML attribute values.</p>
-    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <p>JavaScript can change HTML attribute values. In this case, it changes the value of the src (source) attribute of an image.</p>
     <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <img id="myImage" src="pic_bulboff.gif" alt="Light bulb">
     <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-  </body>
+  </div>
+</body>
 </html>
